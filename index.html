@@ -1,0 +1,57 @@
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/styl.css">
+    </head>
+    <body>
+        <h1 class="m-auto text-center mt-5 pt-5 mb-5">BookMarker</h1>
+        <div class=" container">
+            <hr>
+          
+           <h2 class="text-center mb-4 "><i class="fa-solid fa-bookmark"></i>
+           Bookmark your  favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+           </h2>
+           
+
+           <i class="fa-solid fa-book-bookmark pe-2 fw-semibold "></i> <label for="BookMark Name" class="form-label fw-semibold ">Site Name</label>
+<input type="text" id="bookmarkName" class="form-control mb-4" placeholder="BookMark Name" oninput="validName()" >
+
+<i class="fa-solid fa-link pe-2 fw-semibold "></i><label for="Website URL" class="form-label  fw-semibold ">Site URL</label>
+<input type="text" id="websiteUrl" class="form-control" placeholder="Website URL" oninput="validUrl()" >
+
+<BUTTON type="submit" class="m-auto d-flex justify-content-center mt-4 text-center text-white rounded-3 border-0 " id="submitBtn" onclick="addBook()">Submit</BUTTON>
+<hr>
+<div>
+    <table class="table bg-white text-center">
+        <thead>
+          <tr class="fs-5 mt-4 fw-semibold">
+            <th >Index</th>
+            <th >Website</th>
+            <th >Visit</th>
+            <th >Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+         <tr>
+          <td>1</td>
+          <td>site name</td>
+          <td><a href=""  target="_blank" class="btn btn-outline-info">visit</a></td>
+          <td>
+            <button class="btn btn-outline-danger">Delete</button>
+          </td>
+
+
+         </tr> 
+        </tbody>
+      </table>
+</div>
+
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html> 
